@@ -10,6 +10,7 @@ syntax keyword sentinelKeywords
   \ range
   \ delete
   \ append
+  \ main
 
 syntax keyword sentImport import
 
@@ -41,15 +42,15 @@ syntax match sentinelOperators "\v\("
 syntax match sentinelOperators "\v\)"
 syntax match sentinelOperators "\v\["
 syntax match sentinelOperators "\v\]"
-syntax match sentinelOperators "\vand\s"
-syntax match sentinelOperators "\vor\s"
+syntax match sentinelOperators "\v\band\s"
+syntax match sentinelOperators "\v\bor\s"
 syntax match sentinelOperators "\vcontains\s"
-syntax match sentinelOperators "\vin\s"
-syntax match sentinelOperators "\vis\s"
-syntax match sentinelOperators "\vmatches\s"
-syntax match sentinelOperators "\vnot\s"
-syntax match sentinelOperators "\vxor\s"
-syntax match sentinelOperators "\velse\s"
+syntax match sentinelOperators "\v\bin\s"
+syntax match sentinelOperators "\v\bis\s"
+syntax match sentinelOperators "\v\bmatches\s"
+syntax match sentinelOperators "\v\bnot\s"
+syntax match sentinelOperators "\v\bxor\s"
+syntax match sentinelOperators "\v\belse\s"
 
 syntax match sentinelNumber "\v<\d+>"
 syntax match sentinelNumber "\v<\d+\.\d+>"
