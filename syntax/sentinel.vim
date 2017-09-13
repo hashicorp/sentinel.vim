@@ -59,7 +59,8 @@ syntax match sentinelNumber "\v<0x\x+([Pp]-?)?\x+>"
 syntax match sentinelNumber "\v<0b[01]+>"
 syntax match sentinelNumber "\v<0o\o+>"
 
-syntax match sentinelComment "\v#.*$"
+" Comments
+syntax match sentinelComment "\v(#|//).*"
 
 syntax region sentinelString start=/"/ skip=/\\"/ end=/"/ oneline
 
