@@ -1,16 +1,26 @@
 syntax keyword sentinelKeywords
-  \ rule
-  \ as
-  \ if
-  \ func
-  \ return
-  \ for
-  \ keys
-  \ values
-  \ range
-  \ delete
-  \ append
-  \ main
+    \ all
+    \ any
+    \ as
+    \ for
+    \ func
+    \ if
+    \ else
+    \ null
+    \ return
+    \ rule
+    \ undefined
+    \ when
+
+
+syntax keyword sentinelFunctions
+    \ append
+    \ delete
+    \ error
+    \ keys
+    \ length
+    \ print
+    \ values
 
 syntax keyword sentImport import
 
@@ -70,5 +80,7 @@ highlight default link sentinelKeywords Keyword
 highlight default link sentinelString String
 highlight default link sentinelNumber Number
 highlight default link sentinelOperators Operator
+highlight default link sentinelFunctions Function
 highlight default link sentinelComment Comment
 highlight default link sentImport Include
+
