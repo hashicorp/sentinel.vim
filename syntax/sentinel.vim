@@ -2,10 +2,11 @@ syntax keyword sentinelKeywords
     \ all
     \ any
     \ as
+    \ else
     \ for
     \ func
     \ if
-    \ else
+    \ main
     \ null
     \ return
     \ rule
@@ -77,10 +78,10 @@ syntax region sentinelString start=/"/ skip=/\\"/ end=/"/ oneline
 
 " Set highlights
 highlight default link sentinelKeywords Keyword
+highlight default link sentinelFunctions Function
 highlight default link sentinelString String
 highlight default link sentinelNumber Number
 highlight default link sentinelOperators Operator
-highlight default link sentinelFunctions Function
 highlight default link sentinelComment Comment
 highlight default link sentImport Include
 
