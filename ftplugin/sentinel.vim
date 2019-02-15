@@ -2,6 +2,8 @@ setlocal tabstop=2
 setlocal softtabstop=2
 setlocal shiftwidth=2
 
+setlocal formatoptions-=t
+
 " System runs a shell command. If possible, it will temporary set
 " the shell to /bin/sh for Unix-like systems providing a Bourne
 " POSIX like environment.
