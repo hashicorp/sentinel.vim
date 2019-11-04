@@ -46,7 +46,14 @@ function! sentinel#Fmt()
 
   " Run sentinel format
   let command = "sentinel fmt " . l:tmpname
-  call sentinel#System(command)
+  let l:errmsg = sentinel#System(command)
+
+  " Is there an error?
+  if v:shell_error != 0
+    echohl ErrorMsg
+    echo l:errmsg
+    echohl None
+  endif
 
   " remove undo point caused via BufWritePre
   try | silent undojoin | catch | endtry
