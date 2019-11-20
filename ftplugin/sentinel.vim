@@ -4,6 +4,9 @@ setlocal shiftwidth=2
 
 setlocal formatoptions-=t
 
+setlocal comments=s1:/*,mb:*,ex:*/,://,:#
+setlocal commentstring=//\ %s
+
 " System runs a shell command. If possible, it will temporary set
 " the shell to /bin/sh for Unix-like systems providing a Bourne
 " POSIX like environment.
