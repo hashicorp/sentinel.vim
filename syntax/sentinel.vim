@@ -62,6 +62,7 @@ syntax keyword sentinelLoop
   \ for
   \ any
   \ all
+  \ filter
 
 highlight default link sentinelLoop Repeat
 
